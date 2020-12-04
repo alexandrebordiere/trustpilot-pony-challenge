@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "@vue/standard",
+    "@vue/typescript/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.vue"
+      ],
+      "rules": {
+        "indent": "off"
+      }
+    },
+    {
+      "env": {
+        "jest": true
+      },
+      "files": [
+        "**/test/**/*.spec.ts"
+      ]
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}

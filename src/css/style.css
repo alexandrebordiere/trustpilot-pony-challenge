@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* Custom utilities */
+@layer utilities {
+  .border-t-black {
+    border-top-color: black;
+  }
+
+  .border-b-black {
+    border-bottom-color: black;
+  }
+
+  .border-l-black {
+    border-left-color: black;
+  }
+
+  .border-r-black {
+    border-right-color: black;
+  }
+}
